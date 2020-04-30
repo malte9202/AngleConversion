@@ -7,7 +7,7 @@ class TestAngleConversion(unittest.TestCase):
     @mock.patch('AngleConversion.get_conversion_type', create=True)
     def test_get_conversion_type(self,mocked_conversion_type):
         mocked_conversion_type.side_effect = [1]
-        result = AngleConversion.get_conversion_type()
+        result = AngleConversion.get_conversion_type(1)
         self.assertEqual(result, 1, "Should be 1")
 
     def test_rad_to_degree(self):
