@@ -4,10 +4,9 @@ from math import pi
 
 class AngleConversion:
 
-    conversion_type = None  # declare conversion_type
-
     @staticmethod  # static method because it is not bound to the class
-    def get_conversion_type(conversion_type) -> int:  # get conversion type from user, type hint: returns int
+    def get_conversion_type() -> int:  # get conversion type from user, type hint: returns int
+        conversion_type = None
         while conversion_type not in [1, 2]:  # while user input is anything else than 1 or 2
             try:
                 conversion_type = int(input("Enter 1 or 2 to choose the type of conversion."
@@ -17,10 +16,9 @@ class AngleConversion:
                 print("Please enter 1 or 2 to choose the type of conversion.")
         return conversion_type
 
-    angle_to_convert = None
-
     @staticmethod
-    def get_angle_to_convert(angle_to_convert) -> float:  # get angle to convert from user,  returns float
+    def get_angle_to_convert() -> float:  # get angle to convert from user,  returns float
+        angle_to_convert = None
         while not isinstance(angle_to_convert, float):
             try:
                 angle_to_convert = float(input("Enter the angle you want to convert "))
@@ -40,6 +38,6 @@ class AngleConversion:
         return converted_angle
 
 
-run = AngleConversion.convert_angle(AngleConversion.get_conversion_type(None),
-                                    AngleConversion.get_angle_to_convert(None))
+run = AngleConversion.convert_angle(AngleConversion.get_conversion_type(),
+                                    AngleConversion.get_angle_to_convert())
 
