@@ -3,3 +3,5 @@
 .idea/vcs.xml
 *.xml
 .idea/AngleConversion.iml
+__pycache__/test_AngleConversion.cpython-38.pyc
+__pycache__/AngleConversion.cpython-38.pyc
