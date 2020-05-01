@@ -1,6 +1,5 @@
 import unittest
-from unittest import mock
-from AngleConversion import *
+from AngleConversion import AngleConversion
 
 
 class TestAngleConversion(unittest.TestCase):

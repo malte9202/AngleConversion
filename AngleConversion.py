@@ -38,6 +38,6 @@ class AngleConversion:
         return converted_angle
 
 
-run = AngleConversion.convert_angle(AngleConversion.get_conversion_type(),
-                                    AngleConversion.get_angle_to_convert())
+# run = AngleConversion.convert_angle(AngleConversion.get_conversion_type(),
+#                                    AngleConversion.get_angle_to_convert())
 
